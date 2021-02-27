@@ -35,18 +35,21 @@ console.log(res.data)
     <div className="App">
       <header className="App-header">
         <input
+        className="input-fields" 
           type="text"
           placeholder="username"
           value={username}
           onChange={e => setUsername(e.target.value)}
         ></input>
         <input
+        className="input-fields mt-2" 
           type="password"
           placeholder="*********"
           value={password}
           onChange={e => setPassword(e.target.value)}
         ></input>
-        <input type="button" value="Login" onClick={login}></input>
+        <input className="main-btn mt-2" type="button" value="Login" onClick={login}></input>
+        <a href="http://localhost:3002/users/googleLogin" ><button className="main-btn mt-2">Sign in With Google</button></a>
       </header>
     </div>
   )
